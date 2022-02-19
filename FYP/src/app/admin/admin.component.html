@@ -1,0 +1,37 @@
+<div class="headerr">
+  <img src="assets\imges\kust.logo.gif" alt="logo" />
+  <h2>KUST TIME-TABLE</h2>
+</div>
+<div class="background">
+  <div class="container">
+    <div class="sidebar">
+      <div class="header">Admin Dashboard</div>
+      <ul>
+
+    <li><a [routerLink] = "['./AddSubject']"> <i class="fa fa-book" aria-hidden="true"></i>Add Subject</a></li>
+    <li><a [routerLink] = "['./AddTimeTable']"> <i class="fa fa-calendar" aria-hidden="true"></i>Add TimeTable</a></li>
+    <li><a [routerLink] = "['./AddLab']"> <i class="fa fa-flask" aria-hidden="true"></i>Add Labs</a></li>
+    <li><a [routerLink] = "['./AddRoom']"> <i class="fa fa-home" aria-hidden="true"></i>Add Room</a></li>
+   <!-- <li><a [routerLink] = "['./AddFacultyOfficeTime']">  <i class="fa fa-clock-o" aria-hidden="true"> </i> Add Fauclty Office Time</a></li>-->
+  <li> <a [routerLink] = "['./AddUCalender']"> <i class="fa fa-calendar" aria-hidden="true"></i> Add U-Calender</a></li>
+  </ul></div>
+  
+  <main>
+    
+     <router-outlet></router-outlet>
+  </main>
+  </div>
+
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+

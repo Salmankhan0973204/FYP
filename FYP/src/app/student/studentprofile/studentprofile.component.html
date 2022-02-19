@@ -1,0 +1,64 @@
+<br>
+<form [formGroup] = "studentProfile" (ngSubmit)="onSubmit()" class="box">
+  <br>
+  <img [src]="preview" class="img-circle" width="130" height="130">
+  <div class="row">
+
+  <div class="column" >
+  <input formControlName="ID" type="text" name="" placeholder="ID">
+  </div>
+  <div class="column">
+  <input formControlName="Name" type="text" name="" placeholder="Name">
+  </div>
+  </div>
+  
+  <div class="row">
+    <div class="column" >
+    <input formControlName="Email" type="text" name="" placeholder="Email">
+    </div>
+    <div class="column">
+    <input formControlName="DOB" type="text" name="" placeholder="DOB">
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="column" >
+      <input formControlName = "CNIC" type="text" name="" placeholder="CNIC">
+      </div>
+      <div class="column">
+      <input formControlName = "Phone" type="text" name="" placeholder="Number">
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="column" >
+        <input formControlName="Semseter" type="text" name="" placeholder="Semseter">
+        </div>
+        <div class="column">
+          <select formControlName="Course" name="dropdown" class="dropdown">
+    
+            <option value="BSCS">BSCS</option>
+            <option value="BSSE">BSSE</option>
+            <option value="MCS">MCS</option>
+            <option value="MS">MS</option>
+          </select>
+        </div>
+        </div>
+      <div class="row">
+        <div class="column">
+        <button type="button" (click)="fileInput.click()" class="btn">Add PIC</button>
+        </div>
+        </div>
+        <input type="file" #fileInput name="image" id="image" placeholder="pic" (change)="uploadFile($event)">
+
+
+  <hr style="background-color: white;">
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+
+
+
+
+
+

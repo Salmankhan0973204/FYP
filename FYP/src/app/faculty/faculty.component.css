@@ -1,0 +1,23 @@
+*{
+  padding: 0%;
+  margin: 0;
+}
+
+.headerr{
+  background-color:#1a1005;
+  height: 100px;
+  color: white;
+
+
+}
+.headerr img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.headerr h2 {
+  position: relative;
+  top: 40px;
+  left: 30px;
+}

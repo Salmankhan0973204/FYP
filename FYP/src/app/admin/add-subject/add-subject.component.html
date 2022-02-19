@@ -1,0 +1,20 @@
+<br>
+<form class="box" [formGroup]="Subject" (ngSubmit)="OnSubmit()">
+
+  <h2> Add Subject</h2>
+  <input formControlName="Name" type="text" name="" placeholder="Name">
+  <input formControlName="ID" type="text" name="" placeholder="Subject ID">
+  <input formControlName="CreditHours" type="text" name="" placeholder="Credit Hours">
+  <select formControlName="Course" name="dropdown" id="dropdown">
+    
+    <option value="BSCS">BSCS</option>
+    <option value="BSSE">BSSE</option>
+    <option value="MCS">MCS</option>
+    <option value="MS">MS</option>
+  </select>
+  
+  <hr style="background-color: white;">
+  <button *ngIf="!isEdit" [disabled]="!Subject.valid" type="submit" class="btn">Submit</button>
+  <button *ngIf="isEdit" [disabled]="!Subject.valid" type="submit" class="btn">Save</button>
+</form>
+

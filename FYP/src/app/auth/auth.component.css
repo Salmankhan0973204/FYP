@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+}
+
+.header{
+  background-color:#2f2626;
+  height: 100px;
+  color: white;
+
+
+}
+.background{
+  height: 85vh;
+  background: url(../../assets/imges/background.jpg);
+  background-size: cover;
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.header h2 {
+  position: relative;
+  top: 40px;
+  left: 30px;
+}
+

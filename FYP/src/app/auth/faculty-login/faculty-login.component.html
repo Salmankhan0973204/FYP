@@ -1,0 +1,23 @@
+<br>
+  <form [formGroup]="Flogin" (ngSubmit)="onSubmit()" class="box" >
+    <a [routerLink]="['']" class="link"> STUDENT LOGIN</a><br>
+
+    <br>
+    <img src="assets\imges\icon.png" class="img-circle" width="130" height="130">
+    <h2>FACULTY LOGIN</h2>
+   
+    <input formControlName="ID" type="text" name="" placeholder="ID">
+    <p *ngIf="user">Incorrect User</p>
+    <input formControlName="Password" type="password" name=""placeholder="password">
+    <p *ngIf="password">Incorrect password</p>
+    <input  type="submit" name="" value="Login">
+    <hr style="background-color: white;">
+    
+    <button [routerLink] = "['./fff']" class="btn">New USER</button>
+    <br>
+  </form>
+
+
+
+
+

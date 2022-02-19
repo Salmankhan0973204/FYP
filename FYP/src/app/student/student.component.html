@@ -1,0 +1,27 @@
+<div class="headerr">
+  <img src="assets\imges\kust.logo.gif" alt="logo" />
+  <h2>KUST TIME-TABLE</h2>
+  <a [routerLink] = "['./profile']" id="std"> <i class="fa fa-user" aria-hidden="true" style="font-size: 3em" ></i><h4></h4></a>
+</div>
+<div class="background">
+  <div class="container">
+    <div class="sidebar">
+      <div class="header">Student Dashboard</div>
+      <ul>
+    <li><a [routerLink] = "['./Courses']"> <i class="fa fa-graduation-cap" aria-hidden="true"></i>Student Info</a></li>
+    <li><a [routerLink] = "['./TeacherList']"> <i class="fa fa-user" aria-hidden="true"></i>Teacher Info</a></li>
+    <li><a [routerLink] = "['./Subject']"> <i class="fa fa-book" aria-hidden="true"></i> Subject</a></li>
+    <li><a [routerLink] = "['./Tcourse']"> <i class="fa fa-calendar" aria-hidden="true"></i>TimeTable</a></li>
+    <li><a [routerLink] = "['./Lab']"> <i class="fa fa-flask" aria-hidden="true"></i> Labs Info</a></li>
+    <li><a [routerLink] = "['./Room']"> <i class="fa fa-home" aria-hidden="true"></i>Room Info</a></li>
+  <li> <a [routerLink] = "['./AddUCalender']"> <i class="fa fa-calendar" aria-hidden="true"></i> U-Calender</a></li>
+  </ul></div>
+  
+  <main>
+    
+     <router-outlet></router-outlet>
+  </main>
+  </div>
+</div>
+
+

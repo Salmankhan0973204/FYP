@@ -1,0 +1,57 @@
+
+
+<div class="main">
+    <div class="row">
+  
+      <div class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '1'}">
+           <div class="card-body" style="background: #339933;">
+            <h3>Semster 1</h3>
+           </div>
+        </div>
+  
+        <div class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '2'}">
+             <div class="card-body" style="background: #1B1464">
+                <h3>Semster 2</h3>
+             </div>
+             </div>
+  
+  
+           <div class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '3'}">
+               <div class="card-body"style="background: #ffa502;">
+                <h3>Semster 3</h3>
+               </div>
+            </div>
+  
+            <div class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '4'}">
+                 <div class="card-body" style="background: #391313">
+                    <h3>Semster 4</h3>
+                 </div>
+              </div>
+  
+              <div  *ngIf="course!='MCS' && course!='MS'" class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '5'}">
+                   <div class="card-body" style="background:#960f21">
+                    <h3>Semster 5</h3>
+                   </div>
+                </div>
+  
+                <div *ngIf="course!='MCS' && course!='MS'" class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '6'}">
+                 <div class="card-body" style="background: #4d2600;">
+                    <h3>Semster 6</h3>
+                 </div>
+  
+              </div>
+              <div  *ngIf="course!='MCS' && course!='MS'" class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course, semester: '7'}">
+                   <div class="card-body" style="background: #002db3">
+                    <h3>Semster 7</h3>
+                   </div>
+                </div>
+  
+                <div  *ngIf="course!='MCS' && course!='MS'"  class="card" [routerLink]="['./TimeTable']" [queryParams]="{Course: course,semester: '8'}">
+                     <div class="card-body" style="background:#800080">
+                        <h3>Semster 8</h3>
+               
+                     </div>
+                  
+  
+  </div>
+

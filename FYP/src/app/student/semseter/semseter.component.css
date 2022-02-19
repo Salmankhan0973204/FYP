@@ -1,0 +1,38 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+ 
+    .card{
+      width: 30%;
+      height: 100%;
+      border: 1px solid #ccc;
+      transition: 0.3s;;
+      color: white;
+      margin-left: 25px;
+      margin-top: 25px;
+  
+    }
+    .row{
+      display:flex;
+      flex-flow:wrap;
+      justify-content:left;
+    }
+  
+    .card-body{
+  
+      padding: 50px 50px;
+      text-align: center;
+      font-size: 18px;
+      
+    }
+    .card:hover{
+      transform: scale(1.05);
+    
+  
+    }
+  
+  
+  

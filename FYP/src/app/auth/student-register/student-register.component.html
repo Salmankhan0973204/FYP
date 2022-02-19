@@ -1,0 +1,22 @@
+<br>
+
+  <form   [formGroup]="Register" (ngSubmit)="onSubmit()"class="box" >
+    <h1>Register Here</h1>
+    <hr style="background-color: white;">
+    <input formControlName="Name" type="text" name="" placeholder="Name">
+    <input formControlName="ID" type="text" name="" placeholder="Registration No.">
+    <input formControlName="Semester" type="text" name="" placeholder="Semster">
+    <input formControlName="Password" type="password" name=""placeholder="password">
+      <select formControlName="Course" name="dropdown" id="dropdown">
+        <option value="BSCS">BSCS</option>
+        <option value="BSSE">BSSE</option>
+        <option value="MCS">MCS</option>
+        <option value="MS">MS</option>
+      </select>
+    <input type="submit" name="" value="SIGN UP"  >
+    <hr style="background-color: white;">
+    <h4 style="color: white;"> have already account ><a href="#"> Login here</a></h4>
+  </form>
+
+
+

@@ -1,0 +1,104 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.box{
+  width: 370px;
+  height: 550px;
+  margin: 30px auto;
+  background-color: rgba(76,60,60,1);
+  text-align: center;
+}
+  .box h1{
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+
+
+}
+.box input[type="text"]{
+
+  text-align: center;
+  border: 2px solid #3498db;
+  padding:14px 10px;
+  margin: 20px auto;
+  width: 200px;
+  background:none;
+  display: block;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+
+}
+.box input[type="password"]{
+  text-align: center;
+  border: 2px solid #3498db;
+  padding:14px 10px;
+  margin: 20px auto;
+  width: 200px;
+  background:none;
+  display: block;
+  outline: none;
+  color: white;
+  border-radius: 24px;}
+
+  .btn{
+    text-align: center;
+    border: 2px solid #3498db;
+    padding:14px 10px;
+    margin: 20px auto;
+    width: 200px;
+    background:none;
+    display: block;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;}
+
+    .box input[type="submit"]{
+      text-align: center;
+      border: 2px solid #2ecc71;
+      padding:14px ;
+      margin: 20px auto;
+      width: 120px;
+      background:none;
+      display: block;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      cursor: pointer;}
+
+      #dropdown{
+        text-align: center;
+      border: 2px solid  #3498db;padding:14px ;
+      margin: 20px auto;
+      width: 120px;
+      padding:14px ;
+      background:none;
+      display: block;
+      outline: none;
+      color: gray;
+      border-radius: 24px;
+      cursor: pointer;}
+
+      
+
+      .box input[type="text"]:focus{
+        width: 280px;
+        border-color: #2ecc71;}
+
+        .box input[type="password"]:focus{
+          width: 280px;
+          border-color: #2ecc71;}
+          .box input[type="submit"]:hover{
+            background-color:#34eb5c;
+        }
+
+  .body{
+    background-color: #34495e;
+  }
+
+  mat-form-field {
+    margin-right: 12px;
+  }

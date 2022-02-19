@@ -1,0 +1,123 @@
+<br>
+<form class="box" [formGroup]="RoomtimeTable"  (ngSubmit)="OnSubmit()">
+  <br>
+  <h2>Add Room </h2>
+
+
+<div class="row">
+  <div class="column" >
+    <select formControlName="Day" name="dropdown" class="dropdown">
+    
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+    </select>
+  </div>
+  <div class="column">
+    <select formControlName="RoomNumber"name="dropdown" class="dropdown">
+  
+      <option value="1">Room NO.1</option>
+      <option value="2">Room No.2</option>
+      <option value="3">Room No.3</option>
+      <option value="4">Room No.4</option>
+      <option value="5">Room No.5</option>
+      <option value="6">Room No.6</option>
+      <option value="7">Room No.7</option>
+      <option value="8">Room No.8</option>
+      <option value="9">Room No.9</option>
+    </select>
+  </div>
+  </div>
+  
+     <div class="row">
+    <div class="column" >
+      <input formControlName="TeacherName" type="text" name="" placeholder="Teacher Name">
+    </div>
+    <div class="column">
+      <input formControlName="Time" type="text" name="" placeholder="Time">
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="column" >
+        <select formControlName="Subject" name="dropdown" class="dropdown">
+          <option value="programming fundamentals">programming fundamentals</option>
+                 <option value="Introduction to computing">Introduction to computing</option>
+                 <option value="Data Structure & Algorithms">Data Structure & Algorithms</option>
+                 <option value="Digital Logic and Desgin">Digital Logic and Desgin</option>
+                 <option value="Object Oriented Programming">Object Oriented Programming</option>
+                 <option value="Operting System Concepts">Operting System Concepts</option>
+                 <option value="Database Management System">Database Management System</option>
+                 <option value="Web Engineering">Web Engineering</option>
+                 <option value="Software Engineering">Software Engineering</option>
+                 <option value="Computer Organization and Assembly Language">Computer Organization and Assembly Language</option>
+                 <option value="Visual Programming">Visual Programming</option>
+                 <option value="Data Communication and Networks">Data Communication and Networks</option>
+                 <option value="Artifical Intelligence">Artifical Intelligence</option>
+                 <option value="Mobile Application Development">Mobile Application Development</option>
+                 <option value="Object Oriented Anlysis and Design">Object Oriented Anlysis and Design</option>
+                 <option value="Data Science">Data Science</option>
+                 <option value="Design and Analysis of Algorithms">Design and Analysis of Algorithms</option>
+                 <option value="Usability Engineering">Usability Engineering</option>
+                 <option value="Artifical Neural Network">Artifical Neural Network</option>
+                 <option value="Computer Graphics">Computer Graphics</option>
+                 <option value="Software Project Management">Software Project Management</option>
+                 <option value="Software Quality Assurance">Software Quality Assurance</option>
+                 <option value="Theory of Automata">Theory of Automata</option>
+                 <option value="Information Security">Information Security</option>
+                
+              
+               </select> </div>
+      <div class="column">
+
+        <select formControlName="Semester" name="dropdown" class="dropdown">
+          <option value="1">Semester 1</option>
+          <option value="2">Semester 2</option>
+          <option value="3">Semester 3</option>   
+         <option value="4">Semester 4</option>
+          <option value="5">Semester 5</option>
+           <option value="6">Semester 6</option>
+          <option value="7">Semester 7</option>
+          <option value="8">Semester 8</option>
+        </select>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="column" >
+          <select formControlName="Section" name="dropdown" class="dropdown">
+  
+            <option value="A"> Section A</option>
+            <option value="B"> Section B</option>
+          </select>
+        </div>
+        <div class="colum">
+          <select formControlName="Course" name="dropdown" class="dropdown">
+    
+            <option value="BSCS">BSCS</option>
+            <option value="BSSE">BSSE</option>
+            <option value="MCS">MCS</option>
+            <option value="MS">MS</option>
+          </select>
+
+        </div>
+       </div>
+      
+       
+
+
+  <hr style="background-color: white;">
+  <button *ngIf="!isEdit" [disabled]="!RoomtimeTable.valid" type="submit" class="btn">Submit</button>
+  <button *ngIf="isEdit" [disabled]="!RoomtimeTable.valid" type="submit" class="btn">Save</button>
+</form>
+
+
+
+
+
+
+
+
+

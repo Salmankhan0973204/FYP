@@ -1,0 +1,22 @@
+<br>
+
+  <form   [formGroup]="FRegister" (ngSubmit)="onSubmit()"class="box" >
+    <h1> Faculty Register </h1>
+    <hr style="background-color: white;">
+    <input formControlName="Name" type="text" name="" placeholder="Name">
+    <input formControlName="ID" type="text" name="" placeholder="ID">
+    <input formControlName="Email" type="text" name="" placeholder="Email">
+    <input formControlName="Password" type="password" name=""placeholder="password">
+    <input formControlName="Specialization" type="text" name=""placeholder="Specialization">
+    <input type="submit" name="" value="SIGN UP">
+    
+    <hr style="background-color: white;">
+    <h4 style="color: white;"> have already account ><a [routerLink]="['/facultyLogin']"> Login here</a></h4>
+  </form>
+   
+   
+  
+
+
+
+
